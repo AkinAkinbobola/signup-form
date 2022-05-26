@@ -1,14 +1,21 @@
 .container{
     display: flex;
+    --rich-black-fogra-39: #090F0Bff;
+    --rosewood: #5B100Dff;
+    --rufous: #AB110Eff;
+    --smoky-black: #1A0F0Cff;
+    --smoky-black-2: #110F0Bff;
+    --white : #FFFAFA;
 }
 
 .left-side{
     background-image: url("./img/riddler.jpg");
     height: 100vh;
-    width: 40vw;
-    background-size: contain;
+    width: 50vw;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-position: center;
 }
 
 .logo img{
@@ -18,7 +25,7 @@
 .logo-text{
     font-family: norse, sans-serif;
     font-size: 4rem;
-    color: #FFFAFA;
+    color: var(--white);
 }
 
 .logo *{
@@ -29,9 +36,9 @@
 .logo{
     display: flex;
     position: absolute;
-    top: 7.5rem;
+    top: 7rem;
     box-sizing: border-box;
-    width: 94%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 
@@ -42,12 +49,41 @@
     src: url("Norse-Bold.otf");
 }
 
+@font-face {
+    font-family: riddler;
+    src: url("riddler.ttf");
+}
+
 .right-side{
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    height: 100vh;
+    width: 100%;
 }
 .top, .bottom{
-    background-color: #E5E7EB;
+    background-color: var(--smoky-black-2);
+}
+.middle{
+
 }
 
+
+.top-text{
+    font-family: riddler, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.top{
+    height: 20vh;
+    padding: 40px;
+}
+.text{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.top-text:first-child{
+    margin-bottom: 20px;
+}
