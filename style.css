@@ -65,8 +65,9 @@
     color: var(--white);
 }
 .middle h1{
-    font-family: Roboto ,sans-serif;
+    font-family: riddler ,sans-serif;
     font-size: 2rem;
+    font-weight: bolder;
 }
 
 .middle{
@@ -112,11 +113,18 @@ label{
 }
 input{
     display: block;
-    border: 1px solid var(--smoky-black);
+    border: 1px solid var(--rufous);
     border-radius: 5px;
     height: 2rem;
     width: 12rem;
     margin-top: 5px;
+    background-color: var(--rich-black-fogra-39);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 3px 5px;
+}
+label{
+    font-size: 1.2rem;
 }
 
 .inputs{
@@ -156,4 +164,8 @@ a{
     position: absolute;
     top: 0;
     right: 0;
+}
+input:focus {
+    outline: none;
+    border:1px solid var(--white);
 }
