@@ -1,5 +1,7 @@
 .container{
     display: flex;
+    width: 100vw;
+    height: 100vh;
     --rich-black-fogra-39: #090F0Bff;
     --rosewood: #5B100Dff;
     --rufous: #AB110Eff;
@@ -7,6 +9,8 @@
     --smoky-black-2: #110F0Bff;
     --white : #FFFAFA;
 }
+
+/*Left side*/
 
 .left-side{
     background-image: url("./img/riddler.jpg");
@@ -54,11 +58,14 @@
     src: url("riddler.ttf");
 }
 
+/*Right Side*/
+
 .right-side{
+    /*overflow: scroll;*/
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
+    /*flex: 1;*/
 }
 .top, .bottom{
     background-color: var(--rich-black-fogra-39);
@@ -89,7 +96,6 @@
 }
 
 .top{
-    height: 20vh;
     padding: 40px;
     position: relative;
 }
@@ -105,7 +111,6 @@
 .form{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     padding: 20px 0;
     margin-top: 20px;
 }
@@ -126,6 +131,7 @@ input{
 }
 label{
     font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 
 .inputs{
@@ -134,8 +140,7 @@ label{
 
 .bottom{
     background-color: var(--rich-black-fogra-39);
-    height: 100%;
-    padding: 30px 0 0 30px;
+    padding: 30px 0 20px 30px;
 }
 
 button{
@@ -146,6 +151,15 @@ button{
     color: var(--white);
     font-family: riddler, sans-serif;
     margin-bottom: 15px;
+    animation: 300ms;
+    border: 1px solid var(--rufous);
+}
+
+button:hover{
+    background-color: var(--rich-black-fogra-39);
+    border: 1px solid var(--rufous);
+    color: var(--rufous);
+    cursor: pointer;
 }
 
 .bottom-text{
